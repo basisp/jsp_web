@@ -1,0 +1,185 @@
+@charset "UTF-8";
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+header .user-info a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+  font-weight: bold;
+}
+
+header .user-info a:hover {
+  text-decoration: underline;
+}
+
+nav {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+section {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 1200px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  align-items: flex-start;
+}
+
+.search-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.search-section input {
+  width: 300px;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-section button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-section button:hover {
+  background-color: #45a049;
+}
+
+.book-list {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); /* 수정된 부분 */
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.book-item {
+  background-color: #f5f5f5;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.book-item img {
+  max-width: 100%;
+  height: auto; 
+}
+
+.book-item h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #4CAF50;
+}
+
+.book-item p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.book-item a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.book-item a:hover {
+  background-color: #45a049;
+}
+
+.book-item .rent-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 14px;
+  text-align: center;
+  width: 100%;
+}
+
+.book-item .rent-button:hover {
+  background-color: #45a049;
+}
+
+.book-item a, .book-item .rent-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.book-item a:hover, .book-item .rent-button:hover {
+    background-color: #45a049;
+}
+
+
+.book-details {
+  flex: 1;
+  margin-left: 40px;
+}
+
+.book-details img {
+  max-width: 300px;
+  margin-right: 20px;
+}
+
+

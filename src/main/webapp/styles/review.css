@@ -1,0 +1,146 @@
+/* main.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.user-info {
+    text-align: right;
+    margin-top: 10px;
+}
+
+.user-info a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+h1, h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.review-list {
+    margin: 20px;
+}
+
+.review-item {
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.review-item h3 {
+    margin-top: 0;
+}
+
+.review-item p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.review-item form {
+    margin-top: 15px;
+}
+
+.star-rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.star-rating input {
+    display: none;
+}
+
+.star-rating label {
+    font-size: 2em;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.star-rating input:checked ~ label {
+    color: #f5b301;
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+    color: #f5b301;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* 책 이미지와 책 정보를 옆으로 배치 */
+.book-info {
+    display: flex;
+    align-items: center;
+}
+
+.book-image {
+    width: 80px; /* 이미지 크기를 80px로 설정 */
+    height: auto;
+    margin-right: 20px; /* 이미지와 책 정보 사이 여백 */
+}
+
+.book-details {
+    flex-grow: 1;
+}
+
+.review-item + .review-item {
+    border-top: 2px solid #ddd; /* 책들 사이에 구분선 추가 */
+}
+
+.review-item:last-child {
+    border-bottom: 2px solid #ddd; /* 마지막 책 항목의 하단 구분선 */
+}
